@@ -4,37 +4,39 @@
     box-sizing: border-box;
     font-family: 'poppins' sans-serif;
 }
-body{
-    background: #2e10b3;
-    color:#160218;
-}
+/* body{
+    background-image:
+} */
 #header{
     width: 100%;
-    height: 100vh;
-    background-image:url(./images/Screenshot_14-10-24.jpg);
-    background-size: cover;
+    height: 25vh;
+    background-color: blueviolet;
+    background-size:cover;
     background-position:center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .container{
-    padding: 15px 10%;
+    padding: 10px 5%;
 }
-.navList{
+nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
     
-}
-.navList{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    margin:10px 20px;
-    flex-wrap: wrap;
 
 }
-.navList a{
+
+nav ul li a {
+    position: relative;
+}
+/* .navList a{
     align-items:center;
     text-align: center;
     justify-content: space-between;
@@ -42,4 +44,78 @@ body{
     list-style: none;
     text-decoration: none;
 
+} */
+
+
+.about-container img{
+    width:100%;
+    height:60vh;
+    border-radius: 15px;
+
+}
+/*how to use article*/
+
+article> p{
+    font-weight: bold;
+    background-color: black;
+    padding: .5em;
+    color: olivedrab;
+}
+
+#about {
+    
+    padding: right 80px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    .about-col-1 img{
+        width:100% ;
+        border-radius: 15%;
+    }
+    .about-co-2{
+        flex-basis: 60%;
+    }
+.sub-title{
+    font-size:60 ;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin: 20x 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+   
+    
+}
+.tab-links::after{
+    content: "";
+    position:absolute ;
+    background-color: brown;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-content ul li span{
+color: #b54769;
+font-size: 15px;
 }

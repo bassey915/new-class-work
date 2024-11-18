@@ -1,30 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-   <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
     <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            width="100"
+            height="100"
+            src="./images/free img.webp"
+            alt="logo"
+          />
+          <ul>
+            <li class="navList"><a href="#HOME">HOME</a></li>
+            <li class="navList"><a href="#ABOUT">ABOUT</a></li>
+            <li class="navList"><a href="#SKILL">SKILLS</a></li>
+            <li class="navList"><a href="#PORTFOLIO">PORTFOLIO</a></li>
+            <li class="navList"><a href="#CONTACT ME">CONTACT ME</a></li>
+          </ul>
+        </nav>
+        <br />
+        <p>
+          <!--this is my inline styling-->
+        </p>
 
-    </div class ="container">
-    <nav> 
-        <img width="150" height="100"
-        src="./images/786379ef-f330-4f20-b02f-04854b88f04a.avif" alt="logo">
-    <ul>
-        <li class="navList"><a href="">HOME</a></li>
-        <li class="navList"><a href="">ABOUT</a></li>
-        <li class="navList"><a href="">SKILLS</a></li>
-         <li class="navList"><a href="">PORTFOLIO</a></li>
-         <li class="navList"><a href="">CONTACT ME</a></li>
-    </ul>
+        <h3 style="color: crimson">FRONTEND DEVELOPER</h3>
 
-    
-    </nav>
+        <!--this is my internal styling-->
+        <style>
+          h2 {
+            color: aqua;
+            font: sans-serif;
+          }
+        </style>
+      </div>
     </div>
-   </header> 
-</body>
+
+    <!--about section-->
+
+    <div class="about-container">
+      <div class="row">
+        <div class="about-col-1">
+          <img width="400px" height="500px" img src="images/HAND IMG.webp" />
+        </div>
+        <div class="about-col-2">
+          <h2 id="blue-bordered">ABOUT ME</h2>
+          <p>
+            MY message and content will be display header.
+            <br />We use the padding property to create spacing <br />between an
+            element’s content area and border. <br />The padding property
+            applies this spacing in different ways <br />
+            depending on how many values you provide. <br />The Padding is the
+            INSIDE of the element. <br />
+            Suppose we have a div with many HTML elements inside. <br />The
+            problem is, we want to move the elements inside <br />without moving
+            the div itself. How can we accomplish that? <br />
+            Padding is our hero here
+          </p>
+          <div class="box"><p>Text in .box</p></div>
+          <p>Text not in .box</p>
+
+          <article>
+            <h4>A heading</h4>
+            <p>I am a paragraph.</p>
+            <div>I am a div</div>
+            <p>i am another paragraph.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!---About section----->
+    <div id="ABOUT">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/free imag.webp" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ex
+              libero sapiente blanditiis alias sunt vel voluptatibus deserunt
+              suscipit voluptatem soluta facere neque iure animi itaque officiis
+              minima, voluptate distinctio inventore maxime. Eaque quae hic
+              voluptatum minima vel blanditiis commodi natus ut accusamus ea
+              provident veritatis aperiam, neque necessitatibus eum.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link">Skill</p>
+                <p class ="tab-links ">Experience</p>
+                <p class ="tab-links ">Education</p>
+        
+          </div>
+        <div class="tab-content" id="EXPERIENCE">
+            <ul>
+                <li><span> content Creation</span><br>Creating Option content</li>
+                <li><span> content Creation</span><br>Creating Option content</li>
+                <li><span> content Creation</span><br>Creating Option content</li>
+            </ul>
+
+            <div class="tab-content" id="EDUCATION">
+                <ul>
+                    <li><span> content Creation</span><br>Creating Option content</li>
+                    <li><span> content Creation</span><br>Creating Option content</li>
+                    <li><span> content Creation</span><br>Creating Option content</li>
+                </ul>
+
+                <div class="tab-content" id="skill">
+                    <ul>
+                        <li><span> content Creation</span><br>Creating Option content</li>
+                        <li><span> content Creation</span><br>Creating Option content</li>
+                        <li><span> content Creation</span><br>Creating Option content</li>
+                    </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
