@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="new style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/free img.webp" class="logo" />
+          <ul>
+            <li><a href="#">home</a></li>
+            <li class="navList"><a href="#about">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER!</p>
+          <h1>
+            Hi, I'm <span>Bassey</span><br />
+            Essien.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-----about------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/nysc pic.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              beatae, itaque qui quo, corrupti voluptas quis asperiores
+              praesentium ipsam pariatur delectus cumque adipisci ducimus.
+              Eligendi non delectus expedita deleniti, nam veniam qui
+              consequuntur vel eos aspernatur, provident fuga minus ea. numquam?
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="open-tab('skills')">
+                skills
+              </p>
+              <p class="tab-links" onclick="open-tab('experience')">
+                experience
+              </p>
+              <p class="tab-links" onclick="open-tab('education')">education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UL/UI</span><br />Designer web App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android Application</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UL/UI</span><br />Designer web App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android Application
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UL/UI</span><br />Designer web App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android Application
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classlist.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classlist, remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
